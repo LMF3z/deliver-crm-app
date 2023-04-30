@@ -13,4 +13,6 @@ export const queryKeys = {
 
   getShippingList: 'GET_SHIPPING_LIST',
   getShippingDetails: 'GET_SHIPPING_DETAILS',
+
+  searchClientsByQuery: 'SEARCH_CLIENTS_BY_QUERY',
 };

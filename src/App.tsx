@@ -36,6 +36,10 @@ import ShippingListScreen from './pages/shipping/ShippingListScreen';
 import ShippingCreateScreen from './pages/shipping/ShippingCreateScreen';
 import ShippingDetailsScreen from './pages/shipping/ShippingDetailsScreen';
 
+// clients
+import ClientsListScreen from './pages/clients/ClientsListScreen';
+import ClientsCreateScreen from './pages/clients/ClientsCreateScreen';
+
 axios.defaults.baseURL = import.meta.env.VITE_BASE_API_ROUTE;
 
 const App = () => {
@@ -106,6 +110,16 @@ const App = () => {
             <Route
               path={`${routes.shippingViewScreen}/:id`}
               element={<ShippingDetailsScreen />}
+            />
+
+            {/* Clients */}
+            <Route
+              path={routes.clientsListScreen}
+              element={<ClientsListScreen />}
+            />
+            <Route
+              path={routes.clientsCreateScreen}
+              element={<ClientsCreateScreen />}
             />
           </Route>
         </Routes>

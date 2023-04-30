@@ -24,4 +24,9 @@ export const routes = {
   shippingListScreen: '/private/shipping',
   shippingCreateScreen: '/private/create-shipping',
   shippingViewScreen: '/private/details-shipping',
+
+  // clients
+  clientsListScreen: '/private/clients',
+  clientsCreateScreen: '/private/create-client',
+  clientsViewScreen: '/private/details-client',
 };

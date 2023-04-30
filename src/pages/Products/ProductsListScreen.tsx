@@ -116,6 +116,7 @@ const ProductsListScreen = () => {
         <div className='w-full max-w-2xl h-10 bg-bgHighlight rounded-lg'>
           <input
             type='text'
+            placeholder='Buscar productos'
             onChange={({ target: { value } }) => setSearchQuery(value)}
             className='h-full border border-indigo-600 '
           />

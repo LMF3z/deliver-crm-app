@@ -7,6 +7,7 @@ import {
   MdProductionQuantityLimits,
   MdLocalShipping,
 } from 'react-icons/md';
+import { ImUsers } from 'react-icons/im';
 import { routes } from '../../../constants/routes';
 import sidebarMenuStorage from '../../../store/sidebar.store';
 import ItemSideBar from './components/ItemSidebar';
@@ -181,6 +182,32 @@ const SideBarMenu = () => {
                 handleToggleSideBar();
                 toggleSidebar();
                 navigate(routes.shippingListScreen);
+              },
+            },
+          ]}
+        />
+
+        <ItemSideBar
+          icon={<ImUsers />}
+          label={'Clientes'}
+          collapse={true}
+          views={[
+            {
+              label: 'registrar',
+              icon: <FaUsers />,
+              handleClick: () => {
+                handleToggleSideBar();
+                toggleSidebar();
+                navigate(routes.clientsCreateScreen);
+              },
+            },
+            {
+              label: 'listar',
+              icon: <FaUsers />,
+              handleClick: () => {
+                handleToggleSideBar();
+                toggleSidebar();
+                navigate(routes.clientsListScreen);
               },
             },
           ]}

@@ -1,4 +1,4 @@
-export type TypeUsersRolesT = 'admin' | 'cashier';
+export type TypeUsersRolesT = 'superadmin' | 'admin' | 'cashier';
 
 export enum UsersRolesE {
   SUPER_ADMIN = 'superadmin',
